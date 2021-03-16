@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+    <section class="backimg">
+        
+        <h1>WHAT DOES YOUR NAME SAY ABOUT YOUR PERSONALITY?</h1>
+        <div class="centerDiv">
+                <label>ENTER YOUR NAME</label><br>
+                <input type="text" name="" id="nameid">
+                
+                <div class="imgdiv"></div>
+                
+    <img src="https://cdn.dribbble.com/users/1117770/screenshots/2626626/welcome.gif" width="200" height="200" id="imgchange" class="imgchange">
+    <br>
+    <button class="button">Click Me</button>
+    </div>
+    </div>
+    </div>
+
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+         $('button').click(function(){
+          const name = $('#nameid').val();
+          alert(name);
+          $('.imgchange').attr('src',`https://joeschmoe.io/api/v1/${name}`);
+          const b = $('.imgchange');
+          console.log(b);
+         });
+        });
+       </script>
+
+</body>
+</html>
